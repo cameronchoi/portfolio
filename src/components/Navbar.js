@@ -1,32 +1,25 @@
-import React from 'react'
-import logo1 from '../images/logo1.svg'
+import React from "react";
+import { Logo } from "./Logo";
+import { StyledHeader, StyledNavbar } from "./styles/Navbar.styled";
 
 export default function Navbar() {
-    return (
-        <header>
-            <nav>
-                <div>
-                    <a>
-                        <img src={logo1} alt="Logo"/>
-                    </a>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            About
-                        </li>
-                        <li>
-                            Experience
-                        </li>
-                        <li>
-                            Projects
-                        </li>
-                        <li>
-                            Misc.
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    )
+  return (
+    <StyledHeader>
+      <StyledNavbar>
+        <div>
+          <a>
+            <Logo width={100} color="white" />
+          </a>
+        </div>
+        <div>
+          <ul>
+            <li>About</li>
+            <li>Experience</li>
+            <li>Projects</li>
+            <li>Misc.</li>
+          </ul>
+        </div>
+      </StyledNavbar>
+    </StyledHeader>
+  );
 }
