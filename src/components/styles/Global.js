@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { theme } from "../../styles/theme";
 
 const GlobalStyles = createGlobalStyle`
     body {
@@ -7,6 +6,11 @@ const GlobalStyles = createGlobalStyle`
         background: ${({ theme }) => theme.colors.darkSecondary};
         color: ${({ theme }) => theme.colors.darkPrimary};
         font-family: 'Open Sans', sans-serif
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 300;
     }
 `;
 

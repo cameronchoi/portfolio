@@ -1,6 +1,6 @@
 import React from "react";
 import { Logo } from "./Logo";
-import { StyledHeader, StyledNavbar } from "./styles/Navbar.styled";
+import { StyledHeader, StyledLinks, StyledNavbar } from "./styles/Navbar.styled";
 
 export default function Navbar() {
   return (
@@ -11,14 +11,14 @@ export default function Navbar() {
             <Logo width={100} color="white" />
           </a>
         </div>
-        <div>
+        <StyledLinks>
           <ul>
             <li>About</li>
             <li>Experience</li>
             <li>Projects</li>
             <li>Misc.</li>
           </ul>
-        </div>
+        </StyledLinks>
       </StyledNavbar>
     </StyledHeader>
   );
