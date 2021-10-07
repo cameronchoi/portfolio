@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../styles/theme";
 import { Footer } from "./Footer";
 import Navbar from "./Navbar";
-import GlobalStyles from "./styles/Global";
+import GlobalStyles from "../styles/Global"; 
 
 export const Layout = ({ children }) => {
   return (

@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
   height: 200px;
   position: fixed;
   z-index: 10;
-  background: ${({theme}) => theme.colors.darkSecondary};
+  background: ${({ theme }) => theme.colors.darkSecondary};
 `;
 
 export const StyledNavbar = styled.nav`
@@ -25,10 +25,9 @@ export const StyledLinks = styled.div`
     display: flex;
     align-items: center;
     list-style: none;
-    
+
     li {
-        margin-right: 60px;
+      margin-right: 60px;
     }
   }
 `;
-

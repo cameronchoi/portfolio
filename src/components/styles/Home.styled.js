@@ -13,13 +13,33 @@ export const StyledHome = styled.div`
 export const StyledContent = styled.div`
   width: 60%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 `;
 
-export const StyledCat = styled(FontAwesomeIcon)`
-    font-size: 200px;
-`
+export const StyledIcon = styled(FontAwesomeIcon)`
+  font-size: 60px;
+`;
 export const BoldHeading = styled.h1`
-    font-weight: bold;
-`
+  font-weight: bold;
+  margin-top: 0px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 120px;
+    border-right: 3px solid white;
+    animation: blink 0.7s infinite ease;
+  }
+
+  @keyframes blink {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
+`;
