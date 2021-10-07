@@ -8,23 +8,19 @@ let direction = "right";
 
 export const Home = () => {
   const [role, setRole] = useState("");
-  function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
 
   useEffect(() => {
     const type = () => {
       if (direction === "right") {
         wordIndex += 1;
         if (wordIndex > availableRoles[roleIndex].length) {
-            wordIndex -= 2;
-            direction = "left";
-          setTimeout(type, 1000);
-          return
+          wordIndex -= 2;
+          direction = "left";
+          setTimeout(() => {
+            setRole(availableRoles[roleIndex].slice(0, wordIndex));
+            type();
+          }, 1000);
+          return;
         }
         setTimeout(type, 100);
       } else {
@@ -39,14 +35,11 @@ export const Home = () => {
         }
         setTimeout(type, 100);
       }
-
       setRole(availableRoles[roleIndex].slice(0, wordIndex));
     };
 
-    type()
-    return () => {
-
-    };
+    type();
+    return () => {};
   }, []);
 
   return (
