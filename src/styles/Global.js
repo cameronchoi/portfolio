@@ -16,6 +16,16 @@ const GlobalStyles = createGlobalStyle`
         font-size: 120px;
         font-weight: 300;
     }
+
+    h2 {
+        font-size: 60px;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 45px;
+        font-weight: 300;
+    }
 `;
 
 export default GlobalStyles;
