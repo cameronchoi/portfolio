@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h3 {
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 300;
     }
 `;
