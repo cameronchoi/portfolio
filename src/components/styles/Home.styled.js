@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const StyledHome = styled.div`
   min-height: 100vh;
@@ -16,10 +15,6 @@ export const StyledContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-
-export const StyledIcon = styled(FontAwesomeIcon)`
-  font-size: 60px;
 `;
 
 export const BoldHeading = styled.h1`
