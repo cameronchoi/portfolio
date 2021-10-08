@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { BoldHeading, StyledContent, StyledHome } from "../styles/Home.styled";
+import { BoldHeading, StyledHome } from "../styles/Home.styled";
 
-const availableRoles = [" student.", "n\u00A0engineer.", "\u00A0consultant."];
-let roleIndex = 0;
-let wordIndex = 0;
-let direction = "right";
+const availableRoles = [
+  "A\u00A0student.",
+  "An\u00A0engineer.",
+  "A\u00A0consultant.",
+  "From\u00A0Sydney.",
+  "From\u00A0Seoul.",
+];
 
 export const Home = () => {
   const [role, setRole] = useState("");
 
   useEffect(() => {
+    let roleIndex = 0;
+    let wordIndex = 0;
+    let direction = "right";
     const type = () => {
       if (direction === "right") {
         wordIndex += 1;
@@ -22,7 +28,7 @@ export const Home = () => {
           }, 1000);
           return;
         }
-        setTimeout(type, 100);
+        setTimeout(type, 80);
       } else {
         wordIndex -= 1;
         if (wordIndex < 0) {
@@ -33,7 +39,7 @@ export const Home = () => {
           }
           direction = "right";
         }
-        setTimeout(type, 100);
+        setTimeout(type, 80);
       }
       setRole(availableRoles[roleIndex].slice(0, wordIndex));
     };
@@ -44,11 +50,10 @@ export const Home = () => {
 
   return (
     <StyledHome>
-      <StyledContent>
-        <h1>Hi, I'm Cameron.</h1>
-        <BoldHeading>{"A" + role}</BoldHeading>
-      </StyledContent>
-      {/* <StyledIcon icon={faChevronDown} /> */}
+      <h1>Hi, I'm Cameron.</h1>
+      <div>
+        {role && <BoldHeading>{role}</BoldHeading>}
+      </div>
     </StyledHome>
   );
 };
