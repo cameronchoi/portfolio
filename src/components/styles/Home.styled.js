@@ -21,6 +21,7 @@ export const StyledContent = styled.div`
 export const StyledIcon = styled(FontAwesomeIcon)`
   font-size: 60px;
 `;
+
 export const BoldHeading = styled.h1`
   font-weight: 500;
   margin-top: 0px;
@@ -34,12 +35,11 @@ export const BoldHeading = styled.h1`
   }
 
   @keyframes blink {
-      0% {
-          opacity: 0;
-      }
-      100% {
-          opacity: 1;
-      }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-
 `;
