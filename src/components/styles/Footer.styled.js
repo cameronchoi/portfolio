@@ -10,7 +10,7 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
-  margin: 15px;
+  margin: 15px 25px;
 `;
 
 export const SocialLinks = styled.div`

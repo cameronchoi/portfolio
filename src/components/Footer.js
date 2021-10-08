@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledFooter, StyledIcon } from "./styles/Footer.styled";
 import { faGithub, faLinkedinIn, faMediumM } from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope} from "@fortawesome/free-regular-svg-icons"
 
 export const Footer = () => {
   return (
@@ -10,6 +11,7 @@ export const Footer = () => {
         <StyledIcon icon={faGithub} size="3x" />
         <StyledIcon icon={faLinkedinIn} size="3x"/>
         <StyledIcon icon={faMediumM} size="3x"/>
+        <StyledIcon icon={faEnvelope} size="3x"/>
       </div>
     </StyledFooter>
   );
