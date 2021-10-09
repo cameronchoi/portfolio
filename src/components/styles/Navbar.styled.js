@@ -26,7 +26,11 @@ export const StyledLinks = styled.div`
     align-items: center;
     list-style: none;
 
-    li {
+    a {
+      &:hover {
+        transform: scale(1.1);
+      }
+
       margin-left: 60px;
     }
   }
