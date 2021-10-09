@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Layout } from "../components/Layout";
-import { About } from "../components/sections/About";
+import { Misc } from "../components/sections/Misc";
 
-const AboutPage = () => {
+const MiscPage = () => {
   return (
     <Layout>
-      <About />
+      <Misc />
     </Layout>
   );
 };
 
-export default AboutPage;
+export default MiscPage;
