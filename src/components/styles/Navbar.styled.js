@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
 
 export const StyledNavbar = styled.nav`
   height: 100%;
-  padding: 0px 80px;
+  padding: 0px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;

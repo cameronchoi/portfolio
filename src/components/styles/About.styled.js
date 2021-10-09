@@ -14,7 +14,7 @@ export const StyledMain = styled.div`
   width: 1100px;
 
   div {
-      margin: 0px 50px
+    margin: 0px 50px;
   }
 `;
 

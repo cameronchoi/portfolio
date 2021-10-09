@@ -6,27 +6,22 @@ import {
   faMediumM,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { BoldLink } from "./BoldLink";
 
 export const Footer = () => {
   return (
     <StyledFooter>
       <h3>
         Fully{" "}
-        <a
-          href="https://github.com/cameronchoi/portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          designed
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://github.com/cameronchoi/portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          developed
-        </a>{" "}
+        <BoldLink href="https://github.com/cameronchoi/portfolio">
+          {" "}
+          designed{" "}
+        </BoldLink>
+        and
+        <BoldLink href="https://github.com/cameronchoi/portfolio">
+          {" "}
+          developed{" "}
+        </BoldLink>
         by Cameron Choi
       </h3>
       <div>
