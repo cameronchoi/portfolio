@@ -4,7 +4,7 @@ import { StyledMisc } from "../styles/Misc.styled";
 export const Misc = () => {
   return (
     <StyledMisc>
-      <h1>The Misc page</h1>
+      <h1>Coming soon...</h1>
     </StyledMisc>
   );
 };

@@ -4,7 +4,7 @@ import { StyledProjects } from "../styles/Projects.styled";
 export const Projects = () => {
   return (
     <StyledProjects>
-      <h1>The Projects page</h1>
+      <h1>Coming soon...</h1>
     </StyledProjects>
   );
 };

@@ -4,7 +4,7 @@ import { StyledExperience } from "../styles/Experience.styled";
 export const Experience = () => {
   return (
     <StyledExperience>
-      <h1>The Experience page</h1>
+      <h1>Coming soon...</h1>
     </StyledExperience>
   );
 };
