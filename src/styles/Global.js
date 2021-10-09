@@ -18,13 +18,18 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h2 {
-        font-size: 60px;
-        font-weight: 300;
+        font-size: 100px;
+        font-weight: 500;
+        margin: 0px
     }
 
     h3 {
         font-size: 45px;
         font-weight: 300;
+    }
+
+    p {
+        font-size: 22px;
     }
 
     a {

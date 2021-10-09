@@ -7,3 +7,18 @@ export const StyledAbout = styled.div`
   align-items: center;
   width: 100%;
 `;
+
+export const StyledMain = styled.div`
+  display: flex;
+  align-items: center;
+  width: 1100px;
+
+  div {
+      margin: 0px 50px
+  }
+`;
+
+export const StyledImage = styled.img`
+  height: 350px;
+  width: 350px;
+`;
