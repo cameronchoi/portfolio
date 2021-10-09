@@ -14,8 +14,8 @@ export const About = () => {
             work full-time as a full stack engineer at Maia Financial.
           </p>
           <p>
-            I’ve been programming since high school, but my interest grew when I
-            attended a 6 month coding bootcamp straight out of high school in
+            I’ve been programming since high school, but my passion grew when I
+            attended a 6 month coding bootcamp straight in late
             2018 (you can read about it here). Since then, my biggest passion
             lies in using my knowledge and skills to bring about a genuine
             positive impact to the community around me. In my spare time, I

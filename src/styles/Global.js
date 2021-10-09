@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     p {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     a {

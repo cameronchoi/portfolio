@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   width: 100%;
-  height: 200px;
+  height: 150px;
   position: fixed;
   z-index: 10;
   background: ${({ theme }) => theme.colors.darkSecondary};
@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
 
 export const StyledNavbar = styled.nav`
   height: 100%;
-  padding: 0px 100px;
+  padding: 0px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
