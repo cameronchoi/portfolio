@@ -1,10 +1,11 @@
 import React from "react";
 import { StyledExperience } from "../styles/Experience.styled";
+import { ComingSoon } from "../ComingSoon";
 
 export const Experience = () => {
   return (
     <StyledExperience>
-      <h1>Coming soon...</h1>
+      <ComingSoon />
     </StyledExperience>
   );
 };
