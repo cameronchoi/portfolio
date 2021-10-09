@@ -27,7 +27,7 @@ export const StyledLinks = styled.div`
     list-style: none;
 
     li {
-      margin-right: 60px;
+      margin-left: 60px;
     }
   }
 `;
