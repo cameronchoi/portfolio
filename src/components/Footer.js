@@ -45,7 +45,7 @@ export const Footer = () => {
           <StyledIcon icon={faLinkedinIn} size="3x" />
         </a>
         <a
-          href="https://medium.com/@cameronjchoi"
+          href="https://cameronchoi.medium.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
