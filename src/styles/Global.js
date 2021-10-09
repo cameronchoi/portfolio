@@ -26,6 +26,11 @@ const GlobalStyles = createGlobalStyle`
         font-size: 45px;
         font-weight: 300;
     }
+
+    a {
+        color: ${({ theme }) => theme.colors.darkPrimary};
+        text-decoration: none;
+    }
 `;
 
 export default GlobalStyles;

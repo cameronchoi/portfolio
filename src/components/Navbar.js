@@ -1,22 +1,35 @@
 import React from "react";
 import { Logo } from "./Logo";
-import { StyledHeader, StyledLinks, StyledNavbar } from "./styles/Navbar.styled";
+import {
+  StyledHeader,
+  StyledLinks,
+  StyledNavbar,
+} from "./styles/Navbar.styled";
+import { Link } from "gatsby";
 
 export default function Navbar() {
   return (
     <StyledHeader>
       <StyledNavbar>
         <div>
-          <a>
+          <Link to="/">
             <Logo width={100} color="white" />
-          </a>
+          </Link>
         </div>
         <StyledLinks>
           <ul>
-            <li>About</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Misc.</li>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+            <Link to="/experience">
+              <li>Experience</li>
+            </Link>
+            <Link to="/projects">
+              <li>Projects</li>
+            </Link>
+            <Link to="/misc">
+              <li>Misc.</li>
+            </Link>
           </ul>
         </StyledLinks>
       </StyledNavbar>
