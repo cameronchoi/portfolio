@@ -1,11 +1,11 @@
 import React from "react";
-import logo1 from "../images/logo1.svg";
+import logo from "../images/logo_big.svg";
 import { StyledLogo } from "./styles/Logo.styled";
 
 export const Logo = ({ height, width, color }) => {
   return (
     <StyledLogo
-      src={logo1}
+      src={logo}
       alt="Logo"
       height={height}
       width={width}
